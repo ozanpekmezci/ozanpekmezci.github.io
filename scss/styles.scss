@@ -660,6 +660,7 @@ footer {
     transform: translateY(-50%);
     margin-left: 300px;
     padding: 15px;
+    width: 100%;
     
 
     h3 {
@@ -667,6 +668,7 @@ footer {
         font-weight: 300;
         color: $heading;
         margin: 0 0 15px 0;
+        text-align: left;
     }
 
     p {
