@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Ozan Pekmezci Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,8 @@
     <!-- End #mobile-menu-toggle -->
     <header>
         <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+            <span>Close</span>
+            <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
             <li>
@@ -73,9 +74,9 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        I am studying Master's of Computer Science at the Technical University of Munich. Through my involvement in different projects,
-                        I have gained solid programming experience in various fields of Software Engineering and am currently interested in the field
-                        of Machine Learning and Blockchain.
+                        I am a Software Engineer in the Berlin office of BCG Platinion. I currently work in the fields of data, cloud (Azure, AWS
+                        and Kubernetes) and machine learning.
+
                     </p>
                 </div>
             </div>
@@ -83,21 +84,35 @@
     </div>
     <!-- End #about -->
 
+
+
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="October 2018 - Present">
-                <h3>Technical University of Munich</h3>
-                <h4>Master's Thesis Student</h4>
+            <div data-date="October 2019 - Present">
+                <h3>Boston Consulting Group (BCG) Platinion</h3>
+                <h4>Software Engineer</h4>
                 <ul>
                     <li>
-                        Develop of a Recommender System that addresses the diversity principle to improve user satisfaction.
+                        Participate in 3 client projects as backend developer and data engineer, which are listed in th project section. </li>
+                    <li>
+                        Schedule ETL pipelines using Airflow that run Databricks notebooks and save data in delta format on Azure Data Lake. </li>
+                    <li>
+                        Perform Apache Spark operations on Databricks, which runs on top of Apache Hadoop. </li>
+                    <li>Lead a team of three cloud engineers to create the infastructure on Azure using Terraform.</li>
+                </ul>
+            </div>
+            <div data-date="October 2018 - June 2019">
+                <h3>Master thesis project at Motius GmbH and fortiss GmbH</h3>
+                <h4>Machine Learning Engineer</h4>
+                <ul>
+                    <li>
+                        Developed a Recommender System that addresses the diversity principle to improve user satisfaction. </li>
+                    <li>
+                        Fed data into Embedding layer and predict project-talent relevancy using Deep Neural Nets developed on TensorFlow and Keras.
                     </li>
                     <li>
-                         Calculate employee-project similarity and use metric learning to select best candidates with scikit-learn and Python.
-                    </li>
-                    <li>
-                         Feed data into Embedding layer and predict relevancy using Deep Neural Nets developed on TensorFlow and Keras.
+                        Accepted feedback from users and directly improve the model using a feedback loop.
                     </li>
                 </ul>
             </div>
@@ -109,13 +124,13 @@
                         Developed Ethereum Smart Contracts using Solidity.
                     </li>
                     <li>
-                         Deployed and maintained Ethereum-based distributed ledger protocol Quorum to Ubuntu servers using Docker.
+                        Deployed and maintained Ethereum-based distributed ledger protocol Quorum to Ubuntu servers using Docker.
                     </li>
                     <li>
-                         Programmed Node.js applications that listen, process and push data into the Blockchain.
+                        Programmed Node.js applications that listen, process and push data into the Blockchain.
                     </li>
                     <li>
-                         Utilized Web3.js to read data from the Blockchain and show data on the Front-End.
+                        Utilized Web3.js to read data from the Blockchain and show data on the Front-End.
                     </li>
                 </ul>
             </div>
@@ -125,16 +140,16 @@
                 <h4>Front-End Developer</h4>
                 <ul>
                     <li>
-                         Developed and designed a Dashboard for a smart city project based in Dubai.
+                        Developed and designed a Dashboard for a smart city project based in Dubai.
                     </li>
                     <li>
-                         Used Front-End libraries React to build the User Interface and Redux to manage states.
+                        Used Front-End libraries React to build the User Interface and Redux to manage states.
                     </li>
                     <li>
-                         Ensured the user-friendliness of the Dashboard on different screen sizes with CSS.
+                        Ensured the user-friendliness of the Dashboard on different screen sizes with CSS.
                     </li>
                     <li>
-                         Worked with a team of 6 and took part in the decision-making processes.
+                        Worked with a team of 6 and took part in the decision-making processes.
                     </li>
                 </ul>
             </div>
@@ -162,7 +177,7 @@
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>Technical University of Munich</h3>
-            <span class="education-date">2015 - present</span>
+            <span class="education-date">2015 - 2019</span>
             <h4>Master of Science in Computer Science</h4>
         </div>
         <!-- End .education-block -->
@@ -180,72 +195,115 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <a href="https://www.sueddeutsche.de/muenchen/landkreismuenchen/fahrradunfaelle-mitdenkende-ampel-soll-radler-schuetzen-1.4031222">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project1.jpeg" />
-                    </div>
-                    <!-- End .project-image -->
+                <div class="project no-image">
                     <div class="project-info">
-                        <h3>Ampelligence</h3>
-                            <p>
-                                 Develop a system to warn vehicle drivers when a bicycle is detected at crossings.
-                            </p>
-                            <p>
-                                 Use Convolutional Neural Networks to distinguish between the detected objects with YOLO real-time object detection.
-                            </p>
-                            <p>
-                                 Create a Business Plan using a Lean Canvas to give the project direction, define objectives and help the project getting
-                                funded.
-                            </p>
+                        <h3>Data and Analytics Platform for a telecommunication company in Sweden</h3>
+                        <p>
+                            Work as a data engineer to create a data and analytics platform to drive the client company to be data-driven . </p>
+                        <p>Schedule ETL pipelines using Airflow that run Databricks notebooks and save data in delta format
+                            on Azure Data Lake.
+                        </p>
+                        <p>Perform Apache Spark operations on Databricks, which runs on top of Apache Hadoop.
+                        </p>
+                        <p>Lead a team of three cloud engineers to create the infastructure on Azure using Terraform.</p>
                     </div>
                     <!-- End .project-info -->
                 </div>
+                <div class="project no-image">
+                    <div class="project-info">
+                        <h3>Data and Analytics Platform for a leading jewellery company in Denmark</h3>
+                        <p>
+                            Worked as a data engineer leveraging data assets by creating a Data platform, speeding the value delivered by machine learning
+                            use cases. </p>
+                        <p>Developed data processing pipelines (ETL), leveraging open source technologies (Airflow, Hadoop)
+                            and Azure PaaS services (Data Lake, Data Factory).
+                        </p>
+                        <p>Leveraged industrialized data processing and exploration capabilities provided by Databricks with
+                            an underlying Spark cluster.</p>
+                        <p>Led a data engineering team and delivered to stakeholders new governed data assets and capabilities
+                            available through our Data as a Service platform.</p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <div class="project no-image">
+                    <div class="project-info">
+                        <h3>On-the-fly car tuning platform</h3>
+                        <p>
+                            Worked as a backend developer at the creation of an app store platform to tune cars on the fly for a leading automotive company
+                            in Germany. </p>
+                        <p>Developed 4 different microservices using the Flask framework and Python programming language to
+                            create a scalable backend.</p>
+                        <p>Participated in the creation of the AWS cloud stack that is developed on CloudFormation as infrastructure-as-code.</p>
+                        <p>Developed the AWS Cognito authentication service that protects other services behind API Gateway.</p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <a href="https://www.sueddeutsche.de/muenchen/landkreismuenchen/fahrradunfaelle-mitdenkende-ampel-soll-radler-schuetzen-1.4031222">
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/project1.jpeg" />
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Ampelligence</h3>
+                            <p>
+                                Develop a system to warn vehicle drivers when a bicycle is detected at crossings.
+                            </p>
+                            <p>
+                                Use Convolutional Neural Networks to distinguish between the detected objects with YOLO real-time object detection.
+                            </p>
+                            <p>
+                                Create a Business Plan using a Lean Canvas to give the project direction, define objectives and help the project getting
+                                funded.
+                            </p>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
                 </a>
                 <!-- End .project -->
                 <a href="https://github.com/ozanpekmezci/capstone">
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project3.png" />
-                    </div>
-                    <div class="project-info">
-                        <h3>Machine Learning Nanodegree Capstone</h3>
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/project3.png" />
+                        </div>
+                        <div class="project-info">
+                            <h3>Machine Learning Nanodegree Capstone</h3>
                             <p>
-                                 Developed a deep learning project to extract house numbers from street-view images.
+                                Developed a deep learning project to extract house numbers from street-view images.
                             </p>
                             <p>
-                                 Used the architecture Convolutional Neural Networks with multiple layers on TensorFlow and Keras.
+                                Used the architecture Convolutional Neural Networks with multiple layers on TensorFlow and Keras.
                             </p>
                             <p>
-                                 Achieved overall accuracy of 87.2%, per character accuracy of 96.8% and 96.5% coverage.
-                            </p>                        
-                    </div>
-                    <!-- End .project-info -->
+                                Achieved overall accuracy of 87.2%, per character accuracy of 96.8% and 96.5% coverage.
+                            </p>
+                        </div>
+                        <!-- End .project-info -->
                     </div>
                     <!-- End .project -->
                 </a>
 
                 <a href="https://www.youtube.com/watch?v=U8JSDOeoLOc">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project2.png" />
-                    </div>
-                    <div class="project-info">
-                        <h3>The Voice of Retail</h3>
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/project2.png" />
+                        </div>
+                        <div class="project-info">
+                            <h3>The Voice of Retail</h3>
                             <p>
-                                 Developed a Chatbot built on Dialogflow for MediaMarktSaturn that can be interacted via voice or text.
+                                Developed a Chatbot built on Dialogflow for MediaMarktSaturn that can be interacted via voice or text.
                             </p>
                             <p>
-                                 Connected the bot to the Express backend and iOS client giving the users a complete experience.
+                                Connected the bot to the Express backend and iOS client giving the users a complete experience.
                             </p>
                             <p>
-                               Presented the application to an audience of 400 for a software theatre.
+                                Presented the application to an audience of 400 for a software theatre.
                             </p>
-                    </div>
-                    <!-- End .project-info -->
+                        </div>
+                        <!-- End .project-info -->
 
-                </div>
+                    </div>
                 </a>
                 <!-- End .project -->
             </div>
@@ -256,38 +314,98 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
+            <li>Data Engineering
+            </li>
+            <li>Back-End Web Development
+            </li>
             <li>Python</li>
-            <li>Machine Learning</li>
-            <li>scikit-learn</li>
-            <li>pandas</li>
-            <li>NumPy</li>
-            <li>Tensorflow</li>
-            <li>Keras</li>
-            <li>Jupyter Notebook</li>
-            <li>JavaScript</li>
-            <li>iOS Development</li>
+            <li>Machine Learning
+            </li>
             <li>Agile</li>
-            <li>Software Development</li>
-            <li>Scrum</li>
-            <li>Rapid Prototyping</li>
             <li>Programming</li>
-            <li>React.js</li>
-            <li>Redux</li>
-            <li>SQL</li>
-            <li>Ubuntu</li>
-            <li>Java</li>
+            <li>Scrum</li>
+            <li>Software Development
+            </li>
+            <li>Start-ups
+            </li>
+            <li>React.js
+            </li>
             <li>PostgreSQL</li>
-            <li>Android</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>Blockchain</li>
-            <li>Deep Learning</li>
-            <li>Ethereum</li>
-            <li>Back-End Web Development</li>
-            <li>Internet of Things</li>
-            <li>Solidity</li>
-            <li>Cascading Style Sheets (CSS)</li>
+            <li>Git</li>
+            <li>Amazon Web Services (AWS)
+            </li>
+            <li>SQL</li>
             <li>Docker</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+            <li>Node.js
+            </li>
+            <li>Internet of Things
+            </li>
+            <li>Recommender Systems
+            </li>
+            <li>Scikit-Learn
+            </li>
+            <li>NumPy
+            </li>
+            <li>Keras</li>
+            <li>Pair Programming
+            </li>
+            <li>Artificial Intelligence (AI)
+            </li>
+            <li>Application Programming Interfaces
+            </li>
+            <li>AWS Lambda
+            </li>
+            <li>Flask</li>
+            <li>Infrastructure as code (IaC)
+            </li>
+            <li>Kubernetes</li>
+            <li>Microsoft Azure
+            </li>
+            <li>DevOps</li>
+
+            <li>Extract, Transform, Load (ETL)
+
+            </li>
+            <li>MongoDB
+            </li>
+            <li>Deep Learning
+            </li>
+            <li>Python (Programming Language)
+
+            </li>
+            <li>pandas
+            </li>
+            <li>TensorFlow
+            </li>
+            <li>Jupyter
+            </li>
+            <li>Artificial Neural Networks
+            </li>
+            <li>Infrastructure as code (IaC)
+            </li>
+            <li>Neural Networks
+            </li>
+            <li>AWS
+            </li>
+            <li>AWS CloudFormation
+            </li>
+
+                        </li>
+                        <li>Microservices
+                        </li>
+                        <li>Amazon Cognito
+
+                        </li>
+                        <li>Hadoop
+
+                        </li>
+                        <li>Apache Spark
+
+                        </li>
+                        <li>Full-Stack Development
+                        </li>
         </ul>
     </div>
     <!-- End #skills -->
@@ -297,32 +415,32 @@
         <a href="https://github.com/ozanpekmezci"></a>
         <div class="optional-section-block">
             <h3>Udacity Machine Learning Nanodegree, 2018</h3>
-            <p>The Machine Learning Nanodegree program is made of 6 technical projects including one capstone.
-                The code for the projects can be found on the Github page.
+            <p>The Machine Learning Nanodegree program is made of 6 technical projects including one capstone. The code for
+                the projects can be found on the Github page.
             </p>
         </div>
         <!-- End .education-block -->
         </a>
         <a href="https://www.bayerischer-verkehrssicherheitspreis.de/gewinner2018/die-verleihung-2018/">
-        <div class="optional-section-block">
-            <h3>Bavarian Traffic Security Award, Winner, 2018</h3>
-            <p>
-                With the project Ampelligence, we won the Bavarian Traffic Security Award in Bamberg.
-                The topic of this year was minimizing bicycle accidents. We successfully showcased the the Minimum Viable Product in Bamberg.
-            </p>
-        </div>
+            <div class="optional-section-block">
+                <h3>Bavarian Traffic Security Award, Winner, 2018</h3>
+                <p>
+                    With the project Ampelligence, we won the Bavarian Traffic Security Award in Bamberg. The topic of this year was minimizing
+                    bicycle accidents. We successfully showcased the the Minimum Viable Product in Bamberg.
+                </p>
+            </div>
         </a>
         <!-- End .optional-section-block -->
         <a href="https://www.thinkmakestart.com/tms-6/ampelligence/">
-        <div class="optional-section-block">
-            <h3>Think Make Start, Winner, 2017</h3>
-            <p>
-                 Think Make Start is a 10 day hackathon that takes places at the entrepreneurship center of the Technical University of Munich.
-                We won the challenge as the team Ampelligence. After the challenge, we pursued the idea further.
-            </p>
-        </div>
-        <!-- End .optional-section-block -->
-    
+            <div class="optional-section-block">
+                <h3>Think Make Start, Winner, 2017</h3>
+                <p>
+                    Think Make Start is a 10 day hackathon that takes places at the entrepreneurship center of the Technical University of Munich.
+                    We won the challenge as the team Ampelligence. After the challenge, we pursued the idea further.
+                </p>
+            </div>
+            <!-- End .optional-section-block -->
+
     </div>
     </a>
     <!-- End .optional-section -->
@@ -346,7 +464,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2018 Ozan Pekmezci
+                        Copyright &copy; 2020 Ozan Pekmezci
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -357,10 +475,14 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/ozanpekmezci" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/ozanpekmezci" target="_blank">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/ozanpekmezci/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/ozanpekmezci/" target="_blank">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
